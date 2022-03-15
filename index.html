@@ -1,20 +1,13 @@
-!DOCTYPE html>
-
-<html lang="ja">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="file upload">
-  <meta name="keywords" content="upload">
-  <title>画像を選択</title>
-</head>
-
-<body>
-  <form action="/cgi-bin/index.cgi" enctype="multipart/form-data" method="post">
-    File name: 
-    <input type="file" name="foobar" required>
-    <input type="submit" value="Upload">
-  </form>
-</body>
-
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>test</title>
+  </head>
+  <body>
+    <form action="cgi-bin/index.py" method="post" enctype="multipart/form-data">
+            <input type="file" name="imagefile">
+            <input type="submit">
+        </form>
+  </body>
 </html>
